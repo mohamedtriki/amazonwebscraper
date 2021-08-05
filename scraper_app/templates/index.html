@@ -1,0 +1,88 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="{% static 'img/logo.jfif' %}" sizes="40x40" type="image/svg">
+    <title> m   zon/ebay scraper</title>
+</head>
+<body>
+    <section id="big_cont">
+        <section id="cont1">
+                <div id="title">Amazon/Ebay scraper</div>
+                <br>
+                <div id="search">
+                    <form action="">
+                        <input type="text" name="search" placeholder="search for product">
+                        <button type="submit" >search</button>
+                    </form>
+                </div>
+        </section>
+        <section id="cont2">
+            <div id="produsts">
+                <div id="amazon">
+                    <h1>Amazon Products</h1>
+                    <div id="amazon_products">
+                        {%for  i ,j, k  in mylist2%}
+                        <div class="wrapper">
+                            <div class="big_rec">
+                                <div class="rec1">
+                                    <img src="{{k}}" alt="">
+                                </div>
+                                <div class="rec2">
+                                    <div class="price">{{j}}</div>
+                                    <div class="name">- {{i}}</div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div id="ebay">
+                    <h1>Ebay Products</h1>
+                    <div id="ebay_products">
+                        {%for  i ,j, k  in mylist%}
+                        <div class="wrapper">
+                            <div class="big_rec">
+                                <div class="rec1">
+                                    <img src="{{k}}" alt="">
+                                </div>
+                                <div class="rec2">
+                                    <div class="price">{{j}}</div>
+                                    <div class="name">{{i}}</div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- <h1>website under maintenance see you soon !</h1>
+    <img src="{% static 'img/logo.png' %}" alt="">
+    <form action="">
+        <input type="text" name="search" placeholder="search for product">
+        <button type="submit" >search</button>
+    </form>
+    <h1>amazon products</h1>
+    {%for  i ,j, k  in mylist2%}
+    <h3>{{i}}</h3>
+    <h2>{{j}}</h2>
+    <img src="{{k}}" alt="">
+    {% endfor %}
+    <br><br><br><br>
+    <h1>ebay products</h1>
+    {%for  i ,j, k  in mylist%}
+    <h3>{{i}}</h3>
+    <h2>{{j}}</h2>
+    <img src="{{k}}" alt="">
+    {% endfor %} -->
+</body>
+</html>

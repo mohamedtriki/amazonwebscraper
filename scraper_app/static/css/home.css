@@ -1,0 +1,223 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#14213d;
+}
+
+#cont1{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+#title{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 50px;
+    margin-bottom :30px;
+    color:#fca311
+}
+input{
+    border: 5px solid #e5e5e5;
+    height: 25px;
+    width: 60vw;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+button{
+    border: 0px solid #888;
+    padding: 8px 30px 12px 30px;
+    border-radius: 30px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 18px;
+    background-color:#ffdb7980
+}
+button:hover{
+    cursor: pointer;
+    background-color:#fff3e180
+}
+#produsts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+h1{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 30px;
+    color:#ffffff
+}
+#amazon,#ebay{
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+#ebay{
+    border-left: 7px solid #ffffff;
+    border-radius: 4px;
+
+}
+#ebay_products,#amazon_products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.wrapper{
+    margin-bottom: 40px;
+}
+.big_rec{
+    width: 45vw;
+    height: 250px;
+    position: relative;
+    border: 7px solid #fca311;
+    border-radius: 30px;
+}
+.rec1{
+    position: absolute;
+    width: 50%;
+    left: 0;
+}
+img{
+    border-radius:20px 0px 0 20px;
+    position: relative;
+    height: 250px;
+    width: 100%
+
+}
+.rec2{
+    position: absolute;
+    width: 50%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+.price{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 25px;
+    color:#fca311  ;
+    margin: 15px 0 15px 15px;
+}
+.name{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 15px;
+    color:#fff  ;
+    line-height:30px;
+    margin-left: 15px;
+
+}
+@media (max-width: 600px){
+    #cont1{
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+    #title{
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 24px;
+        margin-bottom :30px;
+        color:#fca311
+    }
+    input{
+        border: 5px solid #e5e5e5;
+        height: 25px;
+        width: 85vw;
+        border-radius: 30px;
+        margin-bottom: 20px;
+        margin-right:0;
+    }
+    button{
+        border: 0px solid #888;
+        padding: 8px 25px 12px 25px;
+        border-radius: 30px;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 14px;
+        background-color:#ffdb7980
+    }
+    button:hover{
+        cursor: pointer;
+        background-color:#fff3e180
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #produsts{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    h1{
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 18px;
+        color:#ffffff
+    }#amazon,#ebay{
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #ebay{
+        border-left: 0px solid #ffffff;
+    
+    }
+    #ebay_products,#amazon_products{
+        display: flex;
+        justify-content: center;
+    }
+    .wrapper{
+        margin-bottom: 40px;
+    }
+    .big_rec{
+        width: 90vw;
+        height: 250px;
+        position: relative;
+        border: 7px solid #fca311;
+        border-radius: 30px;
+    }
+    .rec1{
+        position: absolute;
+        width: 50%;
+        left: 0;
+    }
+    img{
+        border-radius:20px 0px 0 20px;
+        position: relative;
+        height: 250px;
+        width: 100%
+    
+    }
+    .rec2{
+        position: absolute;
+        width: 50%;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+    
+    }
+    .price{
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 25px;
+        color:#fca311  ;
+        margin: 15px 0 15px 15px;
+    }
+    .name{
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 15px;
+        color:#fff  ;
+        line-height:30px;
+        margin-left: 15px;
+    
+    }
+}
