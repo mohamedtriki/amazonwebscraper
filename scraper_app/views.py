@@ -8,9 +8,9 @@ def home (request):
     global search
     search=request.GET.get('search')
     print(search)
-    # if type(search) != 'NoneType':
-    #     search=str(search)
-    #     search= search.replace(' ','+')
+    if type(search) != 'NoneType':
+        search=str(search)
+        search= search.replace(' ','+')
     print(search)
     url=f"https://www.amazon.co.uk/s?k={search}&ref=nb_sb_noss"
     url2=f"https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw={search}&_sacat=0"
