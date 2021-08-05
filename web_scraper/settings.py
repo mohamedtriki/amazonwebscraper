@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-rb$!!5=h)&89yl4w_@4b=0p396maw5%2v&3n177(76-*(j7c%^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["amazonebayscrape.herokuapp.com","127.0.0.1"]
+ALLOWED_HOSTS = ["amazonebaywebscraper.herokuapp.com","127.0.0.1"]
 
 
 # Application definition
